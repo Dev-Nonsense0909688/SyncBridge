@@ -1,0 +1,10 @@
+{
+    "settings":{
+        "name": "sync-bridge",
+        "max-space": 2048,
+        "port": 9899
+    },
+    "peers":{
+        "192.168.29.211": 9899
+    }
+}

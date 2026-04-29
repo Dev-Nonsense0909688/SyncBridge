@@ -1,0 +1,4 @@
+2026-04-29 08:56:28,510 [INFO] [tunnel.py:67] mmap sync started
+2026-04-29 08:56:41,012 [INFO] [tunnel.py:40] [MEMORY] from ('192.168.29.205', 9899) -> 2048 bytes
+2026-04-29 08:56:41,013 [INFO] [tunnel.py:48] [JSON] from ('192.168.29.205', 9899) -> {'x': {'index': 13, 'type': 'int', 'size': 8}}
+2026-04-29 08:56:53,508 [DEBUG] [tunnel.py:79] memory changed, sending 2048 bytes
