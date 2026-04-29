@@ -5,8 +5,6 @@ import sys
 from pathlib import Path
 from src.utils.config import PID_FILE, PLATFORM, REG_FILE, NET_PID_FILE, PORT, BASE_DIR
 
-
-# ---------- utils ----------
 def _kill_pid(pid):
     try:
         if PLATFORM == "win32":
@@ -29,8 +27,7 @@ def _is_alive(pid):
         return False
 
 
-# ---------- START ----------
-def cmd_up(args):
+def start():
     py = sys.executable
 
     # ---- tunnel (both OS) ----
@@ -87,9 +84,7 @@ def cmd_up(args):
 
     print("Daemon started")
 
-
-# ---------- STOP ----------
-def cmd_down(args):
+def stop():
     # ---- stop tunnel ----
     if os.path.exists(NET_PID_FILE):
         try:
@@ -123,3 +118,43 @@ def cmd_down(args):
             pass
 
     print("Daemon stopped")
+  
+def status():
+    # ---- tunnel ----
+    if os.path.exists(NET_PID_FILE):
+        try:
+            pid = int(open(NET_PID_FILE).read())
+            if _is_alive(pid):
+                print(f"Tunnel: RUNNING (PID: {pid}, PORT: {PORT})")
+            else:
+                print("Tunnel: DEAD (stale PID file)")
+        except:
+            print("Tunnel: ERROR reading PID")
+    else:
+        print("Tunnel: NOT RUNNING")
+
+    # ---- memory daemon (Windows only) ----
+    if PLATFORM == "win32":
+        if os.path.exists(PID_FILE):
+            try:
+                pid = int(open(PID_FILE).read())
+                if _is_alive(pid):
+                    print(f"Memory daemon: RUNNING (PID: {pid})")
+                else:
+                    print("Memory daemon: DEAD (stale PID file)")
+            except:
+                print("Memory daemon: ERROR reading PID")
+        else:
+            print("Memory daemon: NOT RUNNING")
+
+    print("Status check complete")  
+  
+def run(args):
+    if args[0] in ("start", "up"):
+        start()
+    elif args[0] in ("stop", "down"):
+        stop()
+    elif args[0] == "status":
+        status()
+    else:
+        print("Wrong Syntax")

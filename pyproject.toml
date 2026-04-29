@@ -1,0 +1,9 @@
+[project]
+name = "sync-bridge"
+version = "0.1.0"
+description = "Distributed memory bridge"
+authors = [{name = "Dev-Nonsense0909688"}]
+dependencies = []
+
+[project.scripts]
+sb = "src.cli:main"

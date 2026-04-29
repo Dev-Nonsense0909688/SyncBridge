@@ -6,5 +6,9 @@
     },
     "peers":{
         "192.168.29.211": 9899
+    },
+    "cmd_settings": {
+        "linux": "python3",
+        "windows": "py"
     }
 }

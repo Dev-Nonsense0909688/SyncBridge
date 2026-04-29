@@ -3,9 +3,9 @@ from src.core.registry import VariableRegistry
 from src.core.types import encode
 from src.utils.parser import parse
 
-def cmd_set(args):
-    key = args.key
-    val = parse(args.value)
+def run(args):
+    key = args[0]
+    val = parse(args[1])
 
     encoded, dtype = encode(val)
 
