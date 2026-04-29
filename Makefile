@@ -1,4 +1,4 @@
-.PHONY: run start stop status install dev test clean
+.PHONY: run start stop status install
 
 PY=py
 
