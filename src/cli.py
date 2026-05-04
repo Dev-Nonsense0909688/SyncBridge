@@ -2,7 +2,6 @@ import sys
 import importlib
 from typing import List
 
-
 def main(argv: List[str] = None) -> None:
     argv = argv or sys.argv[1:]
 

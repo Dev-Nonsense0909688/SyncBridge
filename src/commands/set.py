@@ -1,27 +1,33 @@
-from src.core.allocator import MemoryAllocator
-from src.core.registry import VariableRegistry
-from src.core.types import encode
-from src.utils.parser import parse
+from core import Memory, VariableRegistry
+from core.codec import encode
+from util.constants import REGISTRY_FILE
 
+from util.check_daemon import is_running
 def run(args):
+    if not is_running(): 
+        print("Start the service using command `serve`")
+        return
+        
     key = args[0]
-    val = parse(args[1])
+    val = args[1]
 
-    encoded, dtype = encode(val)
+    mem = Memory()
+    reg = VariableRegistry(REGISTRY_FILE)
+    
+    data : dict = reg.get_key(key)
+    
+    if not data:
+        ptr = mem.alloc()
+        mem.write(ptr, encode(val)[0])
+        reg.set_key(key, {"index": ptr, "type": encode(val)[1]})
+        return
+    
+    ptr = data.get("index")
+    mem.write(ptr, encode(val)[0])
+    reg.set_key(key, {"index": ptr, "type": encode(val)[1]})
+    
+    
+    
 
-    mem = MemoryAllocator()
-    reg = VariableRegistry()
-
-    existing = reg.get_key(key)
-
-    if existing:
-        ptr = mem.write(existing["index"], encoded)
-    else:
-        ptr = mem.alloc(len(encoded))
-        mem.write(ptr, encoded)
-
-    reg.set_key(key, {
-        "index": ptr,
-        "type": dtype,
-        "size": len(encoded)
-    })
+    
+    

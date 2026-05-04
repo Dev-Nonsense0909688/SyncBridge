@@ -1,0 +1,10 @@
+{
+    "networking":{
+        "port": 9899,
+        "peers": {
+            "192.168.29.211": 9899
+        }
+    },
+    "max-space": 2048,
+    "start-cmd": "py"
+}

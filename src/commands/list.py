@@ -1,13 +1,12 @@
-from src.core.registry import VariableRegistry
+from core import VariableRegistry
+from src.util.constants import REGISTRY_FILE
+from util.check_daemon import is_running
 
 def run(args):
-    reg = VariableRegistry()
-    data = reg.all_keys()
-
-    if not data:
-        print("No keys")
+    if not is_running(): 
+        print("Start the service using command `serve`")
         return
-    i = 1
-    for k, v in data.items():
-        print(f"{i}. {k}({v['type']})")
-        i += 1
+        
+    reg = VariableRegistry(REGISTRY_FILE)
+    for v, k in reg.data.items():
+        print(v, k)

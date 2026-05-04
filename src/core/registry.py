@@ -1,10 +1,9 @@
 import json
-from src.utils.config import REG_FILE
 
 
 class VariableRegistry:
-    def __init__(self):
-        self.path = REG_FILE
+    def __init__(self, file_path: str):
+        self.path = file_path
         self.data = self._load()
 
     def _load(self):

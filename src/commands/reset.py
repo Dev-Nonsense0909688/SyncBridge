@@ -1,4 +1,4 @@
-from src.util.constants import PEERS
+from src.core.memory import Memory, TOTAL_BLOCKS
 
 from util.check_daemon import is_running
 def run(args):
@@ -6,5 +6,6 @@ def run(args):
         print("Start the service using command `serve`")
         return
         
-    for p in PEERS:
-        print(p)
+    mem = Memory()
+    for i in range(TOTAL_BLOCKS):  
+        mem.free(i)

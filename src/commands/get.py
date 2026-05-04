@@ -1,15 +1,30 @@
-from src.core.allocator import MemoryAllocator
-from src.core.registry import VariableRegistry
-from src.core.types import decode
-
+from core import Memory, VariableRegistry
+from core.codec import decode
+from util.constants import REGISTRY_FILE
+from util.check_daemon import is_running
 def run(args):
-    reg = VariableRegistry()
-    mem = MemoryAllocator()
-
-    meta = reg.get_key(args[0])
-    if not meta:
-        print("Key not found")
+    if not is_running(): 
+        print("Start the service using command `serve`")
         return
+    
+    key = args[0]
 
-    raw = mem.read(meta["index"], meta["size"])
-    print(decode(raw, meta["type"]))
+    mem = Memory()
+    reg = VariableRegistry(REGISTRY_FILE)
+    
+    data : dict = reg.get_key(key)
+    
+    if not data:
+        print(None)
+        return
+    
+    ptr = data.get("index")
+    dtype = data.get("type")
+    
+    print(decode(mem.read(ptr), dtype))
+    
+    
+    
+
+    
+    

@@ -3,13 +3,12 @@ import threading
 import logging
 from logging.handlers import RotatingFileHandler
 import json
-from src.utils.config import PLATFORM
 
 logger = logging.getLogger("sync_bridge")
 logger.setLevel(logging.DEBUG)
 
 handler = RotatingFileHandler(
-    f"./logs/sync-{PLATFORM}.log",
+    f"./logs/sync-bridge.log",
     maxBytes=1_000_000,
     backupCount=3
 )

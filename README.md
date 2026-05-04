@@ -4,8 +4,6 @@ Direct memory-to-memory synchronization across machines.
 
 SyncBridge lets multiple computers behave like they share the same memory. It uses memory-mapped files (mmap) for local speed and UDP to sync data between systems.
 
----
-
 ## Overview
 
 Most systems communicate using request/response APIs, which add delay and overhead.
