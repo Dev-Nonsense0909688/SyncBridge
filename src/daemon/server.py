@@ -1,54 +1,57 @@
 import mmap
 import time
-import sys
+import logging
+
 from src.util.constants import SIZE
 
 NAME = "Local\\sync_bridge"
 
+# ---------- LOGGING ----------
+logging.basicConfig(
+    level=logging.INFO, format="%(asctime)s | %(levelname)s | %(message)s"
+)
+
+logger = logging.getLogger("memory")
+
+
 def server():
-    print("=" * 50)
-    print("Memory Server Booting...")
-    print(f"[INFO] Allocating {SIZE} bytes in RAM")
-    print(f"[INFO] Shared memory name: {NAME}")
-    print("=" * 50)
+    logger.info("Memory Server Booting...")
+    logger.info(f"Allocating {SIZE} bytes")
+    logger.info(f"Name: {NAME}")
+
+    mm = None
 
     try:
-        # Create shared memory
         mm = mmap.mmap(-1, SIZE, tagname=NAME)
-        print("[OK] Memory mapped successfully")
+        logger.info("Memory mapped")
 
-        # Initialize memory
         mm[:] = b"\x00" * SIZE
-        print("[OK] Memory zeroed out")
+        logger.info("Memory cleared")
 
-        # Mark server alive flag (last byte)
-        mm[len(mm) - 1] = 1
-        print("[OK] Heartbeat flag set")
+        mm[-1] = 1
+        logger.info("Heartbeat set")
 
-        print("\n[RUNNING] Server is alive. Waiting...\n")
+        logger.info("Running...")
 
         uptime = 0
         while True:
             time.sleep(1)
             uptime += 1
 
-            # optional debug every 5 sec
             if uptime % 5 == 0:
-                flag = mm[len(mm) - 1]
-                print(f"[DEBUG] Uptime: {uptime}s | Alive flag: {flag}")
+                logger.debug(f"Uptime: {uptime}s")
 
     except KeyboardInterrupt:
-        print("\n[SHUTDOWN] Ctrl+C detected")
+        logger.info("Stopping...")
 
     except Exception as e:
-        print(f"[ERROR] {e}")
+        logger.error(f"Error: {e}")
 
     finally:
-        print("[CLEANUP] Closing memory...")
-        try:
+        if mm:
             mm.close()
-        except:
-            pass
-        print("[EXIT] Server stopped.")
+        logger.info("Closed")
 
-server()
+
+if __name__ == "__main__":
+    server()

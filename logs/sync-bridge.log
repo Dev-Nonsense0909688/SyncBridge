@@ -10,3 +10,370 @@
 2026-05-04 18:01:23,656 [INFO] [tunnel.py:62] mmap sync started
 2026-05-04 18:01:56,989 [INFO] [tunnel.py:84] stopped by user
 2026-05-04 18:01:56,989 [INFO] [tunnel.py:84] stopped by user
+2026-05-04 19:33:19,032 | INFO | Starting SyncBridge Node
+2026-05-04 19:33:19,033 | INFO | PORT  : 9899
+2026-05-04 19:33:19,033 | INFO | PEERS : [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:33:19,033 | INFO | MMAP  : 2048 bytes
+2026-05-04 19:33:19,034 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 19:33:19,034 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 19:33:19,035 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:33:19,035 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:33:19,037 | INFO | [P2P] Receive loop started
+2026-05-04 19:33:19,037 | INFO | Receive loop started
+2026-05-04 19:33:19,037 | INFO | [P2P] P2P started
+2026-05-04 19:33:19,037 | INFO | P2P started
+2026-05-04 19:33:19,038 | INFO | P2P started
+2026-05-04 19:33:19,038 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:19,039 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:20,040 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:20,040 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:21,041 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:21,041 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:22,042 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:22,042 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:23,044 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:23,044 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:24,045 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:24,045 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:25,046 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:25,046 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:26,047 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:26,047 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:27,048 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:27,048 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:28,050 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:28,050 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:29,052 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:29,052 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:30,053 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:30,053 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:31,055 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:31,055 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:32,056 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:32,056 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:33,058 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:33,058 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:34,060 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:34,060 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:35,061 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:35,061 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:36,062 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:36,062 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:37,064 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:37,064 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:38,067 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:38,067 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:39,068 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:39,068 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:40,070 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:40,070 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:41,071 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:41,071 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:42,072 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:42,072 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:43,074 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:43,074 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:44,075 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:44,075 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:45,076 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:45,076 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:46,077 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:46,077 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:47,079 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:47,079 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:48,080 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:48,080 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:49,082 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:49,082 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:50,084 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:50,084 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:51,090 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:51,090 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:52,092 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:52,092 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:53,094 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:53,094 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:54,096 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:54,097 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:55,099 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:55,100 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:56,101 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:56,101 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:57,104 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:57,104 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:58,106 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:58,106 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:33:59,108 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:33:59,108 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:00,108 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:00,108 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:01,110 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:01,110 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:02,112 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:02,112 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:03,113 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:03,113 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:04,115 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:04,115 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:05,117 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:05,117 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:06,119 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:06,119 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:07,121 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:07,121 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:08,122 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:08,122 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:09,124 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:09,124 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:10,125 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:10,125 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:11,126 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:11,126 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:12,128 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:12,128 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:13,131 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:13,131 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:14,133 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:14,133 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:15,135 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:15,135 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:16,136 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:16,136 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:17,138 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:17,138 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:18,140 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:18,140 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:19,141 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:19,141 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:20,142 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:20,142 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:21,143 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:21,143 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:22,145 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:22,145 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:23,147 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:23,147 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:24,148 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:24,148 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:25,149 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:25,149 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:26,151 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:26,151 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:27,152 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:27,152 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:28,154 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:28,154 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:29,155 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:29,156 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:30,157 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:30,157 | ERROR | [LOOP ERROR] 'charmap' codec can't encode character '\U0001f4e1' in position 1: character maps to <undefined>
+2026-05-04 19:34:32,904 | INFO | Starting SyncBridge Node
+2026-05-04 19:34:32,904 | INFO | PORT  : 9899
+2026-05-04 19:34:32,904 | INFO | PEERS : [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:34:32,905 | INFO | MMAP  : 2048 bytes
+2026-05-04 19:34:32,905 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 19:34:32,905 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 19:34:32,906 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:34:32,906 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:34:32,907 | INFO | [P2P] Receive loop started
+2026-05-04 19:34:32,907 | INFO | Receive loop started
+2026-05-04 19:34:32,907 | INFO | [P2P] P2P started
+2026-05-04 19:34:32,907 | INFO | P2P started
+2026-05-04 19:34:32,908 | INFO | P2P started
+2026-05-04 19:34:32,909 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:32,960 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,012 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,063 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,114 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,165 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,216 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,267 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,318 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,369 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,420 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,471 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,523 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,575 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,626 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,678 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,729 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,780 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,831 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,882 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,933 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:33,985 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,036 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,087 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,138 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,189 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,240 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,292 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,343 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,395 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,446 | WARNING | [JSON READ ERROR] [Errno 2] No such file or directory: 'C:\\Users\\USER\\AppData\\Local\\Temp\\sync-bridge\\registry.json'
+2026-05-04 19:34:34,472 | INFO | stopped by user
+2026-05-04 19:37:04,527 | INFO | Starting SyncBridge Node
+2026-05-04 19:37:04,527 | INFO | PORT  : 9899
+2026-05-04 19:37:04,527 | INFO | PEERS : [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:37:04,528 | INFO | MMAP  : 2048 bytes
+2026-05-04 19:37:04,528 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 19:37:04,528 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 19:37:04,529 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:37:04,529 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:37:04,531 | INFO | [P2P] Receive loop started
+2026-05-04 19:37:04,531 | INFO | [P2P] P2P started
+2026-05-04 19:37:04,531 | INFO | Receive loop started
+2026-05-04 19:37:04,531 | INFO | P2P started
+2026-05-04 19:37:04,532 | INFO | P2P started
+2026-05-04 19:37:04,533 | DEBUG | [SYNC] json changed
+2026-05-04 19:37:04,555 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:37:07,366 | INFO | stopped by user
+2026-05-04 19:38:14,602 | INFO | Starting SyncBridge Node
+2026-05-04 19:38:14,602 | INFO | PORT  : 9899
+2026-05-04 19:38:14,603 | INFO | PEERS : [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:38:14,603 | INFO | MMAP  : 2048 bytes
+2026-05-04 19:38:14,603 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 19:38:14,603 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 19:38:14,604 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:38:14,604 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:38:14,606 | INFO | [P2P] Receive loop started
+2026-05-04 19:38:14,606 | INFO | [P2P] P2P started
+2026-05-04 19:38:14,606 | INFO | Receive loop started
+2026-05-04 19:38:14,606 | INFO | P2P started
+2026-05-04 19:38:14,607 | INFO | P2P started
+2026-05-04 19:38:14,607 | DEBUG | [SYNC] json changed
+2026-05-04 19:38:18,958 | INFO | stopped by user
+2026-05-04 19:39:23,761 | INFO | Starting SyncBridge Node
+2026-05-04 19:39:23,761 | INFO | PORT  : 9899
+2026-05-04 19:39:23,761 | INFO | PEERS : [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:39:23,761 | INFO | MMAP  : 2048 bytes
+2026-05-04 19:39:23,762 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 19:39:23,762 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 19:39:23,762 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:39:23,762 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:39:23,764 | INFO | [P2P] Receive loop started
+2026-05-04 19:39:23,764 | INFO | Receive loop started
+2026-05-04 19:39:23,764 | INFO | [P2P] P2P started
+2026-05-04 19:39:23,764 | INFO | P2P started
+2026-05-04 19:39:23,765 | INFO | P2P started
+2026-05-04 19:39:23,765 | DEBUG | [SYNC] json changed
+2026-05-04 19:41:41,806 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:41:41,812 | DEBUG | [SYNC] json changed
+2026-05-04 19:41:41,827 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:41:41,827 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:41:41,827 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:41:41,827 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:41:41,829 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:41:41,829 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:42:15,487 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:42:15,491 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:42:15,491 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:42:15,491 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:42:15,491 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:42:15,493 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:45:55,207 | INFO | stopped by user
+2026-05-04 19:45:57,215 | INFO | Starting SyncBridge Node
+2026-05-04 19:45:57,216 | INFO | PORT  : 9899
+2026-05-04 19:45:57,216 | INFO | PEERS : [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:45:57,216 | INFO | MMAP  : 2048 bytes
+2026-05-04 19:45:57,217 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 19:45:57,217 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 19:45:57,218 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:45:57,218 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 19:45:57,220 | INFO | [P2P] Receive loop started
+2026-05-04 19:45:57,220 | INFO | [P2P] P2P started
+2026-05-04 19:45:57,220 | INFO | Receive loop started
+2026-05-04 19:45:57,220 | INFO | P2P started
+2026-05-04 19:45:57,221 | INFO | P2P started
+2026-05-04 19:45:57,221 | DEBUG | [SYNC] json changed
+2026-05-04 19:45:57,227 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:03,058 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:46:03,066 | DEBUG | [SYNC] json changed
+2026-05-04 19:46:03,069 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:46:03,070 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:03,070 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:03,071 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:03,073 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:46:03,074 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:14,686 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:46:14,692 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:46:14,693 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:14,693 | DEBUG | [SYNC] json changed
+2026-05-04 19:46:14,693 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:14,694 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:14,705 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:46:14,706 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:22,261 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:46:22,268 | DEBUG | [SYNC] json changed
+2026-05-04 19:46:22,274 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:46:22,275 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:22,307 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:46:22,307 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:22,307 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:22,308 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:31,361 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:46:31,368 | DEBUG | [SYNC] json changed
+2026-05-04 19:46:31,375 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:46:31,375 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:31,375 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:31,376 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:31,381 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:46:31,381 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:48,250 | DEBUG | [SYNC] memory -> 2047 bytes
+2026-05-04 19:46:48,257 | DEBUG | [SYNC] json changed
+2026-05-04 19:46:48,257 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 19:46:48,258 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:48,258 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 19:46:48,258 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 19:46:48,263 | INFO | [MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 19:46:48,263 | INFO | [JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 20:14:22,548 | INFO | stopped by user
+2026-05-04 20:14:24,918 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 20:14:24,919 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 20:14:24,921 | INFO | [P2P] Receive loop started
+2026-05-04 20:14:24,921 | INFO | [P2P] P2P started
+2026-05-04 20:14:33,144 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 20:15:56,361 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 20:15:56,361 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 20:15:56,363 | INFO | [P2P] Receive loop started
+2026-05-04 20:15:56,363 | INFO | [P2P] P2P started
+2026-05-04 20:57:35,336 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 20:57:35,336 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 20:57:35,336 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 20:57:35,336 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 20:57:35,339 | INFO | [P2P] Receive loop started
+2026-05-04 20:57:35,339 | INFO | Receive loop started
+2026-05-04 20:57:35,339 | INFO | [P2P] P2P started
+2026-05-04 20:57:35,339 | INFO | P2P started
+2026-05-04 20:57:35,340 | DEBUG | [TUNNEL][SYNC] json changed
+2026-05-04 20:57:35,345 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 20:57:58,173 | DEBUG | [TUNNEL][SYNC] memory -> 2047 bytes
+2026-05-04 20:57:58,181 | DEBUG | [TUNNEL][SYNC] json changed
+2026-05-04 20:57:58,197 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 21:02:11,008 | DEBUG | [TUNNEL][SYNC] memory -> 2047 bytes
+2026-05-04 21:02:11,010 | DEBUG | [TUNNEL][SYNC] json changed
+2026-05-04 21:02:11,013 | INFO | [TUNNEL][MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 21:02:11,013 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 21:02:11,013 | ERROR | Recv error: mmap slice assignment is wrong size
+2026-05-04 21:02:11,014 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 21:02:11,016 | INFO | [TUNNEL][MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 21:02:11,016 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 21:15:29,574 | INFO | stopped by user
+2026-05-04 21:15:31,670 | INFO | [P2P] Initialized on 192.168.29.205:9899
+2026-05-04 21:15:31,670 | INFO | Initialized on 192.168.29.205:9899
+2026-05-04 21:15:31,670 | INFO | [P2P] Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 21:15:31,670 | INFO | Peers: [('192.168.29.211', 9899), ('192.168.29.205', 9899)]
+2026-05-04 21:15:31,672 | INFO | [P2P] [P2P] Receive loop started
+2026-05-04 21:15:31,672 | INFO | [P2P] P2P started
+2026-05-04 21:15:31,672 | INFO | [P2P] Receive loop started
+2026-05-04 21:15:31,672 | INFO | P2P started
+2026-05-04 21:15:31,673 | DEBUG | [TUNNEL][SYNC] json changed
+2026-05-04 21:15:31,687 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 21:15:39,844 | DEBUG | [TUNNEL][SYNC] memory -> 2047 bytes
+2026-05-04 21:15:39,854 | DEBUG | [TUNNEL][SYNC] json changed
+2026-05-04 21:15:39,856 | INFO | [TUNNEL][MEMORY] ('192.168.29.211', 9899) -> 1024 bytes
+2026-05-04 21:15:39,877 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update
+2026-05-04 21:15:39,889 | INFO | [TUNNEL][MEMORY] ('192.168.29.211', 9899) -> 2048 bytes
+2026-05-04 21:15:39,889 | ERROR | [P2P] [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 21:15:39,889 | ERROR | [P2P] Recv error: mmap slice assignment is wrong size
+2026-05-04 21:15:39,890 | INFO | [TUNNEL][JSON] ('192.168.29.211', 9899) -> update

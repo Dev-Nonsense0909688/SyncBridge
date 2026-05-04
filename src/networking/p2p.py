@@ -1,25 +1,37 @@
 import socket
 import threading
 import logging
-from logging.handlers import RotatingFileHandler
 import json
+from pathlib import Path
+from logging.handlers import RotatingFileHandler
 
-logger = logging.getLogger("sync_bridge")
+# ---------- PATH + LOGGING ----------
+BASE_DIR = Path(__file__).resolve().parents[2]
+LOG_DIR = BASE_DIR / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+LOG_FILE = LOG_DIR / "sync-bridge.log"
+
+logger = logging.getLogger("sync_bridge.p2p")
 logger.setLevel(logging.DEBUG)
 
-handler = RotatingFileHandler(
-    f"./logs/sync-bridge.log",
-    maxBytes=1_000_000,
-    backupCount=3
-)
+if not logger.handlers:  # prevent duplicate logs
+    file_handler = RotatingFileHandler(
+        LOG_FILE, maxBytes=1_000_000, backupCount=3, encoding="utf-8"
+    )
 
-formatter = logging.Formatter(
-    "%(asctime)s [%(levelname)s] [%(filename)s:%(lineno)d] %(message)s"
-)
-handler.setFormatter(formatter)
+    console_handler = logging.StreamHandler()
 
-logger.addHandler(handler)
+    formatter = logging.Formatter("%(asctime)s | %(levelname)s | [P2P] %(message)s")
 
+    file_handler.setFormatter(formatter)
+    console_handler.setFormatter(formatter)
+
+    logger.addHandler(file_handler)
+    logger.addHandler(console_handler)
+
+
+# ---------- P2P CLASS ----------
 class P2P:
     def __init__(self, port: int, peers: list[tuple[str, int]], on_memory, on_json):
         self.port = port
@@ -34,21 +46,33 @@ class P2P:
         self.my_ip = self._get_my_ip()
         self.running = False
 
+        logger.info(f"Initialized on {self.my_ip}:{self.port}")
+        logger.info(f"Peers: {self.peers}")
+
+    # ---------- UTILS ----------
     def _get_my_ip(self):
         s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
         try:
             s.connect(("8.8.8.8", 80))
             return s.getsockname()[0]
+        except Exception:
+            return "127.0.0.1"
         finally:
             s.close()
 
-    # ---------------- RECEIVE ----------------
+    # ---------- RECEIVE ----------
     def _recv_loop(self):
+        logger.info("[P2P] Receive loop started")
+
         while self.running:
             try:
                 data, addr = self.sock.recvfrom(65535)
 
+                # skip self messages
                 if addr[0] == self.my_ip:
+                    continue
+
+                if not data:
                     continue
 
                 msg_type = data[:1]
@@ -61,17 +85,29 @@ class P2P:
                     try:
                         obj = json.loads(payload.decode())
                         self.on_json(obj, addr)
-                    except:
-                        pass
+                    except Exception as e:
+                        logger.warning(f"Invalid JSON from {addr}: {e}")
 
             except Exception as e:
                 logger.error(f"[P2P] Recv error: {e}")
 
     def start(self):
+        if self.running:
+            return
+
         self.running = True
         threading.Thread(target=self._recv_loop, daemon=True).start()
+        logger.info("P2P started")
 
-    # ---------------- SEND ----------------
+    def stop(self):
+        self.running = False
+        try:
+            self.sock.close()
+        except:
+            pass
+        logger.info("P2P stopped")
+
+    # ---------- SEND ----------
     def send_memory(self, data: bytes):
         for peer in self.peers:
             try:
@@ -82,7 +118,8 @@ class P2P:
     def send_json(self, obj: dict):
         try:
             payload = json.dumps(obj).encode()
-        except:
+        except Exception as e:
+            logger.error(f"[P2P] JSON encode error: {e}")
             return
 
         for peer in self.peers:

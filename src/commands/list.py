@@ -1,6 +1,6 @@
-from core import VariableRegistry
+from src.core import VariableRegistry
 from src.util.constants import REGISTRY_FILE
-from util.check_daemon import is_running
+from src.util.check_daemon import is_running
 
 def run(args):
     if not is_running(): 

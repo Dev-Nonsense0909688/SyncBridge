@@ -1,8 +1,13 @@
 import sys
 import importlib
 from typing import List
+from src.util.check_platform import is_ok
 
 def main(argv: List[str] = None) -> None:
+    if not is_ok():
+        print("Only supporting Win32 in v1.0.0")
+        return
+    
     argv = argv or sys.argv[1:]
 
     if not argv:

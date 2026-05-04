@@ -1,82 +1,116 @@
 import time
+import json
 import logging
 from logging.handlers import RotatingFileHandler
-import json
+from pathlib import Path
 
 from src.networking.p2p import P2P
-from src.core.memory import Memory 
-from src.util.constants import REGISTRY_FILE, PORT, PEERS, SIZE
+from src.core.memory import Memory
+from src.util.constants import REGISTRY_FILE, PORT, PEERS, SIZE, BASE_DIR
+
+# ---------- PATHS ----------
+BASE_DIR = Path(BASE_DIR)
+LOG_DIR = BASE_DIR / "logs"
+LOG_DIR.mkdir(parents=True, exist_ok=True)
+
+LOG_FILE = LOG_DIR / "sync-bridge.log"
 
 
 # ---------- LOGGING ----------
 logger = logging.getLogger("sync_bridge")
 logger.setLevel(logging.DEBUG)
 
-handler = RotatingFileHandler(
-    f"./logs/sync-bridge.log",
-    maxBytes=1_000_000,
-    backupCount=3
+# file handler
+file_handler = RotatingFileHandler(
+    LOG_FILE, maxBytes=1_000_000, backupCount=3, encoding="utf-8"
 )
 
-formatter = logging.Formatter(
-    "%(asctime)s [%(levelname)s] [%(filename)s:%(lineno)d] %(message)s"
-)
-handler.setFormatter(formatter)
+# console handler (PRINTS LOGS)
+console_handler = logging.StreamHandler()
 
-logger.addHandler(handler)
+formatter = logging.Formatter("%(asctime)s | %(levelname)s | %(message)s")
+
+file_handler.setFormatter(formatter)
+console_handler.setFormatter(formatter)
+
+logger.addHandler(file_handler)
+logger.addHandler(console_handler)
 
 
 # ---------- MEMORY ----------
 mm = Memory()
-
 last = None
 last_remote = None
 
 
-# ---------- callbacks ----------
+# ---------- HELPERS ----------
+def safe_read_json():
+    try:
+        with open(REGISTRY_FILE, "r") as f:
+            return json.load(f)
+    except Exception as e:
+        logger.warning(f"[TUNNEL][JSON READ ERROR] {e}")
+        return None
+
+
+# ---------- CALLBACKS ----------
 def on_memory(data, addr):
     global last_remote
 
-    logger.info(f"[MEMORY] from {addr} -> {len(data)} bytes")
+    logger.info(f"[TUNNEL][MEMORY] {addr} -> {len(data)} bytes")
 
     last_remote = data
-    mm.mm[:len(data)] = data
+    mm.mm[: len(data) - 1] = data
 
-import os
 
 def on_json(obj, addr):
-    logger.info(f"[JSON] from {addr} -> {obj}")
+    logger.info(f"[TUNNEL][JSON] {addr} -> update")
+
     try:
-        tmp = REGISTRY_FILE + ".tmp"
+        tmp = str(REGISTRY_FILE) + ".tmp"
+
         with open(tmp, "w") as f:
             json.dump(obj, f, indent=2)
-        os.replace(tmp, REGISTRY_FILE)
+
+        Path(tmp).replace(REGISTRY_FILE)
+
     except Exception as e:
-        logger.error(f"[JSON]{e}")
-        
-# ---------- setup ----------
+        logger.error(f"[TUNNEL][JSON ERROR] {e}")
+
+
+# ---------- SETUP ----------
 
 p2p = P2P(PORT, PEERS, on_memory, on_json)
 p2p.start()
 
-logger.info("mmap sync started")
 
-
-# ---------- sync loop ----------
-print(f"Starting p2p tunnel on port: {PORT}")
-print(f"Member peers: {PEERS}")
+# ---------- SYNC LOOP ----------
 last = bytes(mm.mm[:SIZE])
+last_json_hash = None
+last_send_time = time.time()
 
 while True:
     try:
         current = bytes(mm.mm[:SIZE])
 
-        # avoid echo loop
+        # ---- MEMORY SYNC ----
         if current != last and current != last_remote:
-            logger.debug(f"memory changed, sending {len(current)} bytes")
+            logger.debug(f"[TUNNEL][SYNC] memory -> {len(current)} bytes")
+
             p2p.send_memory(current)
-            p2p.send_json(json.load(open(REGISTRY_FILE, "r")))
             last = current
+            last_send_time = time.time()
+
+        # ---- JSON SYNC ----
+        obj = safe_read_json()
+        if obj is not None:
+            current_hash = hash(json.dumps(obj, sort_keys=True))
+
+            if current_hash != last_json_hash:
+                logger.debug("[TUNNEL][SYNC] json changed")
+
+                p2p.send_json(obj)
+                last_json_hash = current_hash
 
         time.sleep(0.05)
 
@@ -85,4 +119,5 @@ while True:
         break
 
     except Exception as e:
-        logger.error(f"loop error: {e}")
+        logger.error(f"[TUNNEL][LOOP ERROR] {e}")
+        time.sleep(1)

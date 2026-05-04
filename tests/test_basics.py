@@ -5,8 +5,10 @@ from sync_bridge import SyncBridge
 def test_set_get():
     sb = SyncBridge()
 
-    sb.set("x", 123)
-    val = sb.get("x")
+    val = sb.bind("x")
+    
+    val.set(123)
+    test_val = val.get()
 
     assert val == 123
 

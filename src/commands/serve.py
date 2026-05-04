@@ -2,7 +2,7 @@ import subprocess
 import threading
 import os
 from pathlib import Path
-
+import json
 from src.util.constants import BASE_DIR, REGISTRY_FILE, CMD
 from src.util.check_daemon import is_running
 
@@ -34,7 +34,7 @@ def run(args):
     server_path = Path(BASE_DIR) / "src" / "daemon" / "server.py"
     tunnel_path = Path(BASE_DIR) / "src" / "daemon" / "tunnel.py"
     os.makedirs(Path(BASE_DIR) / "logs", exist_ok = True)
-
+    json.dump({},open(REGISTRY_FILE, "w"), indent=2)
     if is_running():
         print("Already running")
         return

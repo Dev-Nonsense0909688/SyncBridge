@@ -1,33 +1,32 @@
-from core import Memory, VariableRegistry
-from core.codec import encode
-from util.constants import REGISTRY_FILE
+from src.core import Memory, VariableRegistry
+from src.core.codec import encode
+from src.util.constants import REGISTRY_FILE
+from src.util.check_daemon import is_running
+from src.util.parser import parse
 
-from util.check_daemon import is_running
+
 def run(args):
-    if not is_running(): 
-        print("Start the service using command `serve`")
+    if not is_running():
+        print("Service not running. Use `serve` first.")
         return
-        
-    key = args[0]
-    val = args[1]
+
+    key, raw_val = args
+    val = parse(raw_val)
 
     mem = Memory()
     reg = VariableRegistry(REGISTRY_FILE)
-    
-    data : dict = reg.get_key(key)
-    
+
+    encoded_val, val_type = encode(val)
+    data = reg.get_key(key)
+
     if not data:
         ptr = mem.alloc()
-        mem.write(ptr, encode(val)[0])
-        reg.set_key(key, {"index": ptr, "type": encode(val)[1]})
-        return
-    
-    ptr = data.get("index")
-    mem.write(ptr, encode(val)[0])
-    reg.set_key(key, {"index": ptr, "type": encode(val)[1]})
-    
-    
-    
+        action = "Created"
+    else:
+        ptr = data["index"]
+        action = "Updated"
 
-    
-    
+    mem.write(ptr, encoded_val)
+    reg.set_key(key, {"index": ptr, "type": val_type})
+
+    print(f"{action} → {key} [{val_type}] = {val}")

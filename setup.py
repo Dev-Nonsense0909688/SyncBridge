@@ -2,7 +2,7 @@ from setuptools import setup, find_packages
 
 setup(
     name="sync-bridge-core",
-    version="0.1.0",
+    version="1.0.0",
     description="SyncBridge core daemon + CLI",
     author="Dev-Nonsense0909688",
     license="MIT",
