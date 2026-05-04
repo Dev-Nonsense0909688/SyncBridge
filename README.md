@@ -1,3 +1,10 @@
+<p align=center>
+  <img src="https://img.shields.io/badge/python-3.11-blue">
+  <img src="https://img.shields.io/badge/status-v1.0.0-green">
+  <img src="https://img.shields.io/badge/License-MIT-green">
+  <img src="https://img.shields.io/github/stars/Dev-Nonsense0909688/SyncBridge">
+</p>
+
 # SyncBridge
 
 Direct memory-to-memory synchronization across machines.
@@ -18,7 +25,7 @@ SyncBridge avoids that by keeping a shared memory region and syncing it in the b
 
 ## How It Works
 
-SyncBridge creates a fixed-size memory block and divides it into predefined sections.
+SyncBridge creates a fixed-size memory block and divides it into predefined sections called `blocks`.
 Each variable is assigned a fixed offset and type.
 
 A background process monitors changes and sends updates to peers using UDP.
@@ -27,18 +34,14 @@ A background process monitors changes and sends updates to peers using UDP.
 
 ```json
 {
-    "settings":{
-        "name": "sync-bridge",
-        "max-space": 2048,
-        "port": 9899
+    "networking":{
+        "port": 9899,
+        "peers": {
+            "192.168.29.211": 9899
+        }
     },
-    "peers":{
-        "192.168.0.211": 9899
-    },
-    "cmd_settings": {
-        "linux": "python3",
-        "windows": "py"
-    }
+    "max-space": 2048,
+    "start-cmd": "py"
 }
 ```
 
@@ -74,28 +77,24 @@ print(status.get())
 ```
 git clone https://github.com/Dev-Nonsense0909688/SyncBridge.git
 cd SyncBridge
+```
+
+### For Core
+```
 pip install -e .
 ```
 
+### For SDK
+```
+pip install -e sdk/python
+```
 
 ## Usage
 
 Start the system:
 
 ```bash
-sb daemon up/start
-```
-
-Stop it:
-
-```bash
-sb daemon down/stop
-```
-
-Check status:
-
-```bash
-sb daemon status
+sb serve
 ```
 
 Set a value:
@@ -110,7 +109,17 @@ Get a value
 sb get threat_level ## Expected Output: 99
 ```
 
+Check for peers/nodes:
 
+```bash
+sb peers
+```
+
+List all variables available:
+
+```bash
+sb list
+```
 
 ## Project Structure
 
@@ -125,20 +134,13 @@ src/
  └── __main__.py
 ```
 
-
 ## Limitations
 
-* No distributed locking yet
-* Not production ready
 * Tested only with 2 nodes. 
 
 
 ## Roadmap
 * [x] V0.1: Implementation of the CLI with working Memory Allocator and UDP Sync
-* [ ] V1: Python implementation with more reliable UDP sync
-* [ ] V2: C++ and Rust clients
+* [x] V1: Python implementation 
+* [ ] V2: C++ and Rust clients with more reliable UDP sync
 
-
-## License
-
-MIT
